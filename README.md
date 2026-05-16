@@ -5,6 +5,7 @@ A minimal Linux OS built for CSE lab environments.
 ## What's included
 - Python 3
 - vim
+- lua
 - Terminal
 - Nothing else
 
