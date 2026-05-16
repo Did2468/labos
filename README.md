@@ -51,6 +51,8 @@ Requires a Debian-based x86 Docker container.
 ```bash
 git clone https://github.com/Did2468/labos
 cd labos
+docker build -t labos-env .
+docker run -it --name labos-build labos-env bash
 # inside a debian:bookworm x86 docker container
 ./build.sh
 ```
