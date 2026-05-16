@@ -7,12 +7,9 @@ RUN apt update && apt install -y \
     xorriso grub-pc-bin mtools \
     qemu-system-x86
 
-WORKDIR /build
+WORKDIR /labos
 
 COPY . .
 
-RUN git clone https://gitlab.com/buildroot.org/buildroot.git && \
-    cd buildroot && \
-    git checkout 2024.02
 
 CMD ["./build.sh"]
